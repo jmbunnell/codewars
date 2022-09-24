@@ -6,13 +6,13 @@ function getSum(a, b)
     return a;
   };
   
-  // Creates max and min values
-  const min = a > b ? b : a;
-  const max = a > b ? a : b;
+  // Creates start and end values
+  const start = a > b ? b : a;
+  const end = a > b ? a : b;
   
-  // Sum all integers in array
+  // Sum all numbers from start value thru end value
   let sum = 0;
-  for (let i = min; i <= max; i++) {
+  for (let i = start; i <= end; i++) {
     sum = sum + i;
   };
   return sum;

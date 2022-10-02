@@ -1,4 +1,4 @@
-// Break camelCase
+// Break camelCase - my solution
 function solution(string) {
     // split string into array
     var s = string.split('');
@@ -23,3 +23,12 @@ function solution(string) {
     return t;
 }
 console.log(solution('helloThere'));
+
+
+
+
+// best practice - regular expressions
+function solution(string) {
+  return(string.replace(/([A-Z])/g, ' $1'));
+}
+

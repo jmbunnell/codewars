@@ -1,4 +1,4 @@
-# my solution
+# My solution
 def remove_url_anchor(url):
     split = list(url)
     new = []
@@ -10,3 +10,7 @@ def remove_url_anchor(url):
         if i == '#':
             break    
     return last.join(new)
+
+# Best practice
+def remove_url_anchor(url):
+    return url.split('#')[0]
